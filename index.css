@@ -1,0 +1,189 @@
+* {
+  font-family: sans-serif;
+}
+
+.contener_s {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 10px 15px 0 15px;
+}
+
+/* HEADER */
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin-left: 15px;
+}
+
+header ul li:nth-child(4) {
+  background-color: #5f6368;
+  color: #fff;
+  padding: 5px;
+  padding-left: 9px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+header ul li:nth-child(-n + 2) a {
+  text-decoration: none;
+  color: #5b5d5f;
+}
+header ul li:nth-child(-n + 2):hover a {
+  text-decoration: underline;
+}
+header ul li:nth-child(3) {
+  padding: 8px;
+  border-radius: 50%;
+}
+header ul li:nth-child(3) img {
+  opacity: 0.7;
+}
+header ul li:nth-child(3):hover {
+  background-color: #eee;
+}
+
+/* MAIN CONTENT */
+main img {
+    display: inline-block;
+}
+
+
+/* googlepng */
+.googlepng{
+  forced-color-adjust: none;
+  height: 92px;
+  width: 272px;
+ 
+  
+}
+
+ .contener_s .main  .searchBox{
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+ 
+ }
+
+  .main  .searchBox input{
+  border:1px solid #78797a;
+  border-radius: 30px;
+  padding-left: 45px;
+  padding-right: 60px;
+  outline: none;
+  box-shadow: 2px 2px 2px white;
+ }
+
+ /* iconslarga pazitsiya berib joylemiz */
+
+ .searchBox .icons{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  padding: 4px 20px;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+  
+ }
+
+ /* buttotn start  */
+ .main .buttons{
+  margin-top: 20px;
+ 
+ }
+
+ .main .buttons button{
+  margin: 0 5px;
+  padding: 7px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  outline: none;
+  color: #78797a;
+  
+  
+ }
+
+ .main .buttons button:hover{
+  border: 1px solid #78797a;
+  
+ }
+ .main .buttons button:nth-child(-n + 2){
+  background-color: #f8f8f8;
+ }
+ .p{
+  margin-top: 25px;
+  position: absolute;
+   color: #78797a;
+ 
+ }
+
+ /* button end  */
+
+ /* fotter css start  */
+
+ .contener_s .footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f2f2f2;
+ }
+ .contener_s .footer .row{
+  padding: 15px 20px;
+  /* border-bottom: 1px solid rgba(0,0 , 0,0.5 ); */
+ }
+
+ .contener_s .footer .row.row2{
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .contener_s .footer .row.row2 ul{
+  display: flex;
+ }
+
+ .contener_s .footer .row.row2 ul li a{
+
+  text-decoration: none;
+  color:#5f6368 ;
+  margin-right: 25px;
+ }
+ 
+ .contener_s .footer .row.row2 ul li a:hover{
+  text-decoration: underline
+ }
+
+
+ 
+
+ 
+ .contener_s .footer .row.row2 ul:nth-child(2) li a{
+  text-decoration: none;
+  color:#5f6368 ;
+  margin-right: 0px;
+  margin-left: 25px;
+ }
+
+ .contener_s .footer .row.row2 ul:nth-child(2) li a:hover{
+  text-decoration: underline
+ }
+
+/* FOOTER */
