@@ -43,6 +43,7 @@ header ul li:nth-child(4) {
 header ul li:nth-child(-n + 2) a {
   text-decoration: none;
   color: #5b5d5f;
+  font-size: small;
 }
 header ul li:nth-child(-n + 2):hover a {
   text-decoration: underline;
@@ -64,6 +65,7 @@ main {
   width: 600px;
   margin: auto;
   text-align: center;
+  margin-top: 205px;
 }
 
 main img {
@@ -86,7 +88,12 @@ main img {
 }
 
 .searchBox input:hover {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(39, 38, 38, 0.1) 0px 4px 12px;
+}
+p{
+  margin-top: 15px;
+  font-size: small;
+  padding-top: 18px;
 }
 
 .searchBox div img {
@@ -110,47 +117,66 @@ right: 10px;
 
 .buttons {
   margin-top: 20px;
+
 }
 
 main .buttons button {
   margin: 0 5px;
-  padding: 7px 20px;
-  border: none;
+  padding: 5px 10px;
   cursor: pointer;
   border-radius: 4px;
   border: 1px solid transparent;
   outline: none;
-  color: #78797a;
+  color: #454546;
+  font-size: 12px;
+  background-color: #f8f8f8;
 }
 
 main .buttons button:hover {
-  border: 1px solid #78797a;
+  border: 0.5px solid #e0e1e2;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
 }
-main .buttons button:nth-child(-n + 2) {
-  background-color: #f8f8f8;
-}
-.p {
+
+main p {
   margin-top: 25px;
   color: #78797a;
 }
 
 /* FOOTER */
+footer .country{
+  padding: 15px 30px;
+  font-size: 17px;
+  color: #70757A;
+  
+  
+  
+}
+
 
 footer {
   width: 100%;
   background: #f2f2f2;
   position: fixed;
   bottom: 0;
+  
 }
 
 footer .row {
-  padding: 15px 20px;
+
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  color: #70757a;
+ 
   /* border-bottom: 1px solid rgba(0,0 , 0,0.5 ); */
 }
+
 
 footer .row.row2 {
   display: flex;
   justify-content: space-between;
+  padding: 10px 13px;
+ 
+ 
 }
 
 footer .row.row2 ul {
@@ -161,6 +187,7 @@ footer .row.row2 ul li a {
   text-decoration: none;
   color: #5f6368;
   margin-right: 25px;
+  
 }
 
 footer .row.row2 ul li a:hover {
@@ -176,4 +203,17 @@ footer .row.row2 ul:nth-child(2) li a {
 
 footer .row.row2 ul:nth-child(2) li a:hover {
   text-decoration: underline;
+}
+
+
+@media screen and (min-width: 992px) {
+  main .buttons button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  
+
+ 
+
 }
