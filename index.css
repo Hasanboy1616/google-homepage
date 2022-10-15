@@ -62,10 +62,11 @@ header ul li:nth-child(3):hover {
 /* MAIN CONTENT */
 
 main {
-  width: 600px;
+  max-width: 600px;
   margin: auto;
   text-align: center;
   margin-top: 205px;
+  padding: 0 30px;
 }
 
 main img {
@@ -91,9 +92,15 @@ main img {
   box-shadow: rgba(39, 38, 38, 0.1) 0px 4px 12px;
 }
 p{
-  margin-top: 15px;
   font-size: small;
   padding-top: 18px;
+}
+
+.buttons span a{
+  text-decoration: none;
+}
+.buttons span a:hover{
+  text-decoration: underline;
 }
 
 .searchBox div img {
@@ -111,14 +118,15 @@ p{
 
 .searchBox div:last-child img {
   height: 25px;
-top: 9px;
-right: 10px;
+  top: 9px;
+  right: 10px;
 }
+
 
 .buttons {
   margin-top: 20px;
-
 }
+
 
 main .buttons button {
   margin: 0 5px;
@@ -137,16 +145,13 @@ main .buttons button:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
 }
 
-main p {
-  margin-top: 25px;
-  color: #78797a;
-}
 
 /* FOOTER */
 footer .country{
-  padding: 15px 30px;
+  padding: 10px 0px;
   font-size: 17px;
   color: #70757A;
+  margin-left: 15px;
   
   
   
@@ -175,18 +180,20 @@ footer .row.row2 {
   display: flex;
   justify-content: space-between;
   padding: 10px 13px;
- 
- 
 }
 
-footer .row.row2 ul {
-  display: flex;
+
+@media (min-width: 656px) {
+  footer .row.row2 ul {
+    display: flex;
+  }
 }
 
 footer .row.row2 ul li a {
   text-decoration: none;
   color: #5f6368;
   margin-right: 25px;
+  font-size: 12px;
   
 }
 
@@ -199,6 +206,7 @@ footer .row.row2 ul:nth-child(2) li a {
   color: #5f6368;
   margin-right: 0px;
   margin-left: 25px;
+ 
 }
 
 footer .row.row2 ul:nth-child(2) li a:hover {
@@ -206,14 +214,25 @@ footer .row.row2 ul:nth-child(2) li a:hover {
 }
 
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   main .buttons button {
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 20px;
   }
-
   
-
+  main {
+    padding: 0;
+  }
+  
+footer .row.row2 ul li a{
+  font-size: 14px;
+}
  
 
+}
+
+@media (max-width:655){
+  footer .row .row2 ul {
+    display: block;
+  }
 }
